@@ -16,7 +16,7 @@ let logID = 0;
  * @param {*} msg - The logged message content as string or object (converted to JSON).
  */
 async function saveLogToFile(instanceId, msg) {
-  // const logFilePath = `logs/worker.log`;
+  // logFilePath
   const logFilePath = `/tmp/${instanceId}.log`;
 
   // Append serialized logged data in a formatted way into file using write stream API
